@@ -24,14 +24,14 @@ Build SFT-mini checkpoint → train DPO adapter → compare SFT-only vs SFT+DPO 
 
 **Option 1: Free Colab (zero install)**
 
-[![Open T4 in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/<your-username>/Day22-Track3-DPO-Alignment-Lab/blob/main/colab/Lab22_DPO_T4.ipynb)
+[![Open T4 in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DoHuyen04/Day22-Track3-DPO-Alignment-Lab/blob/main/colab/Lab22_DPO_T4.ipynb)
 
 Click → Runtime → Change runtime type → **T4 GPU** → Run all.
 
 **Option 2: Local laptop (≥ 12 GB VRAM)**
 
 ```bash
-git clone https://github.com/<your-username>/Day22-Track3-DPO-Alignment-Lab.git
+git clone https://github.com/DoHuyen04/Day22-Track3-DPO-Alignment-Lab.git
 cd Day22-Track3-DPO-Alignment-Lab
 bash setup-laptop.sh    # ~5 min — venv + deps + cuda probe + smoke test
 make smoke              # import + GPU check (no training)
@@ -244,7 +244,7 @@ Full provocations: [`BONUS-CHALLENGE.md`](BONUS-CHALLENGE.md) (tiếng Việt) �
 1. **Fork hoặc copy repo này lên GitHub account của bạn**, set repo **public**.
    ```bash
    git init -b main
-   git remote add origin https://github.com/<your-username>/Day22-Track3-DPO-Alignment-Lab.git
+   git remote add origin https://github.com/DoHuyen04/Day22-Track3-DPO-Alignment-Lab.git
    ```
 2. Hoàn thành 5 notebooks (giữ output cells trong `.ipynb`).
 3. Add ảnh chụp vào `submission/screenshots/` (xem [`submission/screenshots/README.md`](submission/screenshots/README.md) để biết list 6+3).
@@ -272,7 +272,7 @@ Full provocations: [`BONUS-CHALLENGE.md`](BONUS-CHALLENGE.md) (tiếng Việt) �
 - **Slide deck:** [`day22/day07-dpo-orpo-alignment-tu-sft-en-preference-learning.tex`](../day07-dpo-orpo-alignment-tu-sft-en-preference-learning.tex)
 - **Sibling Day 21 lab** (LoRA/QLoRA fine-tuning, the SFT predecessor): [VinUni-AI20k/Day21-Track3-Finetuning-LLMs-LoRA-QLoRA](https://github.com/VinUni-AI20k/Day21-Track3-Finetuning-LLMs-LoRA-QLoRA)
 - **Stack:** Unsloth (Daniel Han + Mike Han), TRL (Hugging Face), PEFT, bitsandbytes, llama.cpp
-- **Datasets:** UltraFeedback (Argilla), `5CD-AI/Vietnamese-alpaca-cleaned`
+- **Datasets:** UltraFeedback (Argilla), `bkai-foundation-models/vi-alpaca`
 
 ---
 
